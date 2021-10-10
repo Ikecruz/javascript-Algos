@@ -62,11 +62,3 @@ const highestChar = (string) => {
 console.log(highestChar(str))
 
 // dev @Ikecruz
-
-// Solution 2
-
-// dev @your-github-username
-
-
-// Contributors can attempt same question with their own method
-// Remember to add your github username :)

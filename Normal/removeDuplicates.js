@@ -67,11 +67,3 @@ const solution2 = (arr) => {
 
 console.log(solution2(arr))
 // dev @Ikecruz
-
-// Solution 3
-
-// dev @your-github-username
-
-
-// Contributors can attempt same question with their own method
-// Remember to add your github username :)
