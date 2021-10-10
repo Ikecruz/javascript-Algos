@@ -6,6 +6,9 @@
     1, 4, 5 got removed cause they appear more than once
 */
 
+// Test array
+const arr = [2, 3, 6, 7, 2, 3 ,6 , 10]
+
 // Solution 1
 const solution1 = (array) => {
     // Create a new array that will contain the elements that only appeared once
@@ -35,9 +38,6 @@ const solution1 = (array) => {
     return newarr;
 }
 
-// Test
-const arr = [2, 3, 6, 7, 2, 3 ,6 , 10]
-
 console.log(solution1(arr))
 
 // dev @Ikecruz
@@ -64,12 +64,9 @@ const solution2 = (arr) => {
   return newarr;
 }
 
-const arr2 = [1, 1, 1, 1, 2, 2, 3, 4, 4]
 
-console.log(solution2(arr2))
+console.log(solution2(arr))
 // dev @Ikecruz
-
-
 
 // Solution 3
 
