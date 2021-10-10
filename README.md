@@ -7,8 +7,6 @@ This repository features questions that are common in job interviews and their s
 
 Questions are ranked by difficulty (Easy, Normal, Hard)
 
-You can contribute to the repository by cloning the repo and attempting the questions with your own solution(s) under the previous solution(s) {Attach your Github username to :)}
-
 Note: questions are in comments above the solutions in the files
 
 Happy Coding :)
