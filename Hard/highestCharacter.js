@@ -58,7 +58,9 @@ const highestChar = (string) => {
     return finalArr;
 }
 
+// Test
 console.log(highestChar(str))
+
 // dev @Ikecruz
 
 // Solution 2
