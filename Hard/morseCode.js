@@ -121,4 +121,6 @@ const decodeMorse = (code) => {
     return changedWords;
 }
 
+// Test
+// OK SIR
 console.log(decodeMorse("-.. . -.-. .- -.. . ...-"))
