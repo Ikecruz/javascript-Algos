@@ -123,4 +123,4 @@ const decodeMorse = (code) => {
 
 // Test
 // OK SIR
-console.log(decodeMorse("-.. . -.-. .- -.. . ...-"))
+console.log(decodeMorse("--- -.-   ... .. .-."))
