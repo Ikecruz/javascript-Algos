@@ -1,4 +1,7 @@
-# javascript-Algos
+## Javascript Algos
+
+---
+
 Algorithms solved with JavaScript
 
 This is a fun repository created to give solutions to programming questions using JavaScript. 
