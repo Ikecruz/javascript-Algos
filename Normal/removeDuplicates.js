@@ -7,10 +7,10 @@
 */
 
 // Test array
-const arr = [2, 3, 6, 7, 2, 3 ,6 , 10]
+const arr = [2, 3, 6, 7, 2, 3 ,6 , 6, 10]
 
 // Solution 1
-const solution1 = (array) => {
+const removeDup = (array) => {
     // Create a new array that will contain the elements that only appeared once
     newarr = [];
 
@@ -38,32 +38,6 @@ const solution1 = (array) => {
     return newarr;
 }
 
-console.log(solution1(arr))
+console.log(removeDup(arr))
 
-// dev @Ikecruz
-
-
-
-// Solution 2
-const solution2 = (arr) => {
-    // creates new array
-    newarr = [];
-  
-    //loop through array
-    for(let i = 0; i < arr.length; i++) {
-    
-        //if the new array has the element in it, it should remove the element cause it's not unique
-        if(newarr.includes(arr[i])){
-        newarr = newarr.filter(r => r != arr[i])
-        } else{
-            // else it should add it cause it's not in the new array (meaning it's unique)
-            newarr.push(arr[i])
-        }
-    }
-  
-  return newarr;
-}
-
-
-console.log(solution2(arr))
 // dev @Ikecruz
