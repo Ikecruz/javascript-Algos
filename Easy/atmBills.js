@@ -18,47 +18,23 @@
 // 130                [1,1,1,1]
 
 const withdraw = (amount) => {
-    let result = [];
 
     let hundreds, twenties, nines, ones;
     hundreds=twenties=nines=ones=0;
 
-    //get number of hundreds
-    if (amount >= 100) {
-        while (amount >= 100) {
-            amount -= 100;
-            hundreds += 1;
-        }
-    }
+    hundreds = Math.floor(amount/100);
+    let rem = amount % 100;
 
-    //get number of twenties
-    if (amount >= 20) {
-        while (amount >= 20) {
-            amount -= 20;
-            twenties += 1;
-        }
-    }
+    twenties = Math.floor(rem/20);
+    rem = rem % 20;
 
-    //get number of nines
-    if (amount >= 9) {
-        while (amount >= 9) {
-            amount -= 9;
-            nines += 1;
-        }
-    }
+    nines = Math.floor(rem/9);
+    rem = rem % 9;
 
-    //get number of nines
-    if (amount >= 1) {
-        while (amount >= 1) {
-            amount -= 1;
-            ones += 1;
-        }
-    }
+    ones = rem;
 
-    result.push(hundreds, twenties, nines, ones)
-
-    return result;
+    return [hundreds, twenties, nines, ones];
 }
 
 //Test
-console.log(withdraw(230));
+console.log(withdraw(1049));
