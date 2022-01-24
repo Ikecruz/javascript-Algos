@@ -16,11 +16,11 @@ const persistence = (num) => {
     if (num.toString().length == 1) return 0;
     let times = 1;
 
-    num = num.toString().split('').reduce((a,b) => parseInt(a) * parseInt(b), 1)
+    num = num.toString().split('').map(Number).reduce((a,b) => a * b, 1)
 
     if (num.toString().length > 1)  times += persistence(num);
 
     return times;
 }
 
-console.log(persistence(999))
+console.log(persistence(39))
