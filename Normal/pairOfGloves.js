@@ -20,15 +20,13 @@
 
 const numberOfPairs = (gloves) => {
   
-    let arr = gloves.map((glove) => {
-      let newglove = gloves.filter(c => glove == c);
-      gloves = gloves.filter(c => c != glove );
-      return newglove;
+    let pairs = 0
+    const colours = [...new Set(gloves)]
+    colours.map((elem)=>{
+        pairs+=Math.floor(gloves.filter((e) => e == elem).length/2)
     })
-    
-    arr = arr.filter(child => (child.length % 2 == 0) && (child.length != 0));
-    
-    return arr.map(child => Math.floor(child.length / 2)).reduce((a,b) => a + b, 0)
+  
+    return pairs
 }
 
 console.log(numberOfPairs(["red", "red", "red", "red", "red", "red"]));
