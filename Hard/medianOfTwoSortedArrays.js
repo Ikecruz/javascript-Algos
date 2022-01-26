@@ -15,7 +15,7 @@
     Explanation: merged array = [1,2,3,4] and median is (2 + 3) / 2 = 2.5.
 */
 
-const findMedianSortedArrays = () => {
+const findMedianSortedArrays = (nums1, nums2) => {
     // MERGE THE TWO ARRAYS
     let all = [...nums1,...nums2];
     
