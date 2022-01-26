@@ -32,3 +32,5 @@ const findMedianSortedArrays = (nums1, nums2) => {
     
     return median;
 }
+
+console.log(findMedianSortedArrays([1,2],[3,2]));
