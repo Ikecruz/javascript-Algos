@@ -23,13 +23,7 @@
 
 */
 
-const isPalindrome = (x) => {
-    newx = Array.from(x.toString());
-    newx = newx.reverse();
-    newx = parseInt(newx.join(''));
-    if (newx === x) return(true)
-    else return(false)
-};
+const isPalindrome = x => parseInt(x.toString().split('').reverse().join('')) === x;
 
 // Test
 console.log(isPalindrome(121));
