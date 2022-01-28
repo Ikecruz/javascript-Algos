@@ -20,4 +20,4 @@ const duplicateEncode = (word) => {
     return word.map(ele => word.filter(char => char === ele).length > 1 ? ")" : "(" ).join('');
 }
 
-console.log()
+console.log(duplicateEncode("Success"));
