@@ -12,7 +12,7 @@ const testArr = [2, 3, 6, 7, 2, 3 ,6 , 6, 10]
 // Solution 1
 const removeDup = (arr) => {
     
-    return arr.map(char => char.toString()).filter(char => arr.filter(newchar => newchar == char).length == 1 ).map(Number)
+    return arr.filter(char => arr.filter(newchar => newchar == char).length == 1 )
 
 }
 
