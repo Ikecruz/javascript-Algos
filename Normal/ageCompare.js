@@ -43,4 +43,6 @@ let p2 = new Person("Cruz", 17)
 
 console.log(p1.compareAge(p2))
 
+console.log("Testing WSL git")
+
 //@devcruz
