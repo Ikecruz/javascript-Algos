@@ -15,3 +15,5 @@
 const summation = (num) => Array(num).fill(0).map((e, i) => i + 1).reduce((a,b) => a + b, 0);
 
 console.log(summation(20));
+
+// Trying out github's co-author
